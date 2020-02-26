@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body, html {
+        height: 100%;
+        width: 100%;
+    }
+    #back {
+        background: linear-gradient(to left, #66ccff 0%, #ff99cc 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+    #LoginBox {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 5%;
+        border-radius: 15px;
+
+    }
+
+    #inputBox {
+        width: 400px;
+        height: 20px;
+        margin: 3px;
+        display: inline-block;
+        padding: 7px;
+        padding-left: 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        outline-style: none;
+        border: 1px solid #798EA4;
+    }
+
+    #Checkbox {
+        margin: 5px;
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+        color: #798EA4;
+
+    }
+    
+    #Button {
+        margin: 20px;
+        width: 200px;
+        border: none;
+        background-color: #798EA4;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 7px;
+        display: inline-block;
+        border-radius: 7px;
+    }
+
+    #title {
+        font-size: 30px;
+        color: #798EA4;
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <div id="back">
+        <div id="LoginBox">
+            <div id="title">
+                <strong>Song Coding School</strong>
+            </div>
+            <div>
+                <input id="inputBox" type="email" placeholder="Enter Email"/>
+            </div>
+            <div>
+                <input id="inputBox" type="password" placeholder="Password"/>
+            </div>
+            <div id="Checkbox">
+                <input type="checkbox">
+                <label for="checkbox">Remember Me</label>
+            </div>
+            <input id="Button" type="button" value="Login"/>
+        </div>
+    </div>
+</body>
+</html>
