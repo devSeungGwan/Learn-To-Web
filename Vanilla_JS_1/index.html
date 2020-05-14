@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <div class="js-clock">
-      <h1 class="js-title">00:00:00</h1>
+      <span class="js-title">00:00:00</span>
     </div>
-    <form class="js-form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <h4 class="js-greetings greeting"></h4>
+    <div class="content">
+      <div>
+        <form class="js-form form">
+          <input class="nameBox" type="text" placeholder="What is your name?" />
+        </form>
+        <p class="js-greetings greetings"></p>
+      </div>
+      <div>
+        <form class="js-toDoForm">
+          <input
+            class="inputBox"
+            type="text"
+            placeholder="🤔오늘 할 일을 입력해봐!"
+          />
+        </form>
+      </div>
+      <ul class="js-toDoList"></ul>
+    </div>
+    <span class="js-weather"></span>
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>
